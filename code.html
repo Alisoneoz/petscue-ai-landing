@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Petscue - Find Your Furry Soulmate</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee2b4b",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221013",
+                        "pastel-pink": "#ffccd5",
+                        "vibrant-coral": "#ff758f",
+                        "mint-green": "#c7f9cc",
+                        "sunny-yellow": "#ffea00",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .wave-divider {
+            aspect-ratio: 960/100;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .bubbly-shadow {
+            box-shadow: 0 10px 25px -5px rgba(238, 43, 75, 0.3);
+        }
+        .text-glow {
+            text-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display overflow-x-hidden">
+<div class="relative flex min-h-screen w-full flex-col group/design-root">
+<header class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md px-6 md:px-20 py-4 border-b border-primary/10">
+<div class="max-w-[1200px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-4xl fill-1">pets</span>
+<h2 class="text-slate-900 dark:text-slate-100 text-2xl font-black tracking-tighter">Petscue</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-slate-700 dark:text-slate-300 text-sm font-bold hover:text-primary transition-colors" href="#">About</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-bold hover:text-primary transition-colors" href="#">Pets</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-bold hover:text-primary transition-colors" href="#">Stories</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="bg-primary text-white text-sm font-black px-6 py-2.5 rounded-full bubbly-shadow hover:scale-105 transition-transform">
+                        Donate <span class="material-symbols-outlined align-middle text-sm">favorite</span>
+</button>
+<button class="hidden sm:flex bg-primary/10 text-primary text-sm font-black px-6 py-2.5 rounded-full hover:bg-primary/20 transition-colors">
+                        Login
+                    </button>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<section class="relative px-6 py-12 md:py-24 bg-gradient-to-br from-pastel-pink via-white to-mint-green overflow-hidden">
+<div class="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
+<div class="flex flex-col gap-8">
+<div class="inline-flex items-center gap-2 bg-sunny-yellow/30 px-4 py-1.5 rounded-full w-fit border border-sunny-yellow">
+<span class="material-symbols-outlined text-sunny-yellow text-lg fill-1">auto_awesome</span>
+<span class="text-slate-800 text-xs font-black uppercase tracking-widest">Sparkle into a new life</span>
+</div>
+<h1 class="text-slate-900 text-5xl md:text-7xl font-black leading-[1.1] tracking-tight">
+                            Find Your Furry <span class="text-primary italic">Soulmate</span> Today!
+                        </h1>
+<p class="text-slate-700 text-lg md:text-xl font-medium leading-relaxed max-w-lg">
+                            Bringing endless sparkles and joy to your home. Join our mission to give every pet the loving home they deserve. ✨
+                        </p>
+<div class="flex flex-wrap gap-4">
+<button class="flex items-center gap-2 min-w-[180px] justify-center bg-primary text-white text-lg font-black py-4 rounded-full bubbly-shadow hover:scale-105 transition-transform group">
+                                Adopt Now
+                                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="flex items-center gap-2 min-w-[180px] justify-center bg-white text-primary border-2 border-primary/20 text-lg font-black py-4 rounded-full hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined">play_circle</span>
+                                Watch Stories
+                            </button>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-sunny-yellow/40 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-10 -left-10 w-32 h-32 bg-vibrant-coral/40 rounded-full blur-3xl"></div>
+<div class="relative bg-white p-4 rounded-xl rotate-3 shadow-2xl">
+<div class="aspect-square rounded-lg overflow-hidden bg-primary/5 relative">
+<img alt="Cute golden retriever and grey cat sitting together" class="w-full h-full object-cover" data-alt="Cute golden retriever and grey cat sitting together with sparkling eyes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw_RsIjdOKU0WcfFYZGLBctyhXUFc72a3KeQvN_g5R7baUaJb3NcmS1NljC6l1Xbk4GN0_2eBqhpTeAtLEko3KFNMjdQfxH1uor73j7JnDvyMt_Vc0Pyh24r66_3fAf_ydBcrtNTvX0TAvyIo6OAzcpwUg84AgEkuRHNXDDjLGs8jx_rHixe9cH1wEZ1nh4XD-9ovjOzBVgZbgy9lsM2hdm4X60vru92l8VZg3KnGF_GCLRFQc_tQRyb16fePHoAYFzHiSqfw94_E"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-primary fill-1">favorite</span>
+</div>
+</div>
+</div>
+<div class="absolute -top-6 -right-6 animate-bounce">
+<span class="material-symbols-outlined text-6xl text-sunny-yellow fill-1 drop-shadow-lg">flare</span>
+</div>
+<div class="absolute bottom-12 -left-8 animate-pulse">
+<span class="material-symbols-outlined text-5xl text-vibrant-coral fill-1 drop-shadow-lg">favorite</span>
+</div>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 w-full">
+<svg class="fill-white dark:fill-background-dark" viewbox="0 0 1440 320">
+<path d="M0,160L48,176C96,192,192,224,288,213.3C384,203,480,149,576,144C672,139,768,181,864,202.7C960,224,1056,224,1152,197.3C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+</svg>
+</div>
+</section><section class="px-6 py-20 bg-background-light dark:bg-slate-900">
+<div class="max-w-[1200px] mx-auto">
+<div class="flex flex-col items-center text-center gap-4 mb-16">
+<div class="p-4 bg-sunny-yellow/20 rounded-full">
+<span class="material-symbols-outlined text-4xl text-vibrant-coral fill-1">pets</span>
+</div>
+<h2 class="text-4xl md:text-5xl font-black text-slate-900 dark:text-slate-100 italic">Available Pets</h2>
+<p class="text-slate-600 dark:text-slate-400 font-medium max-w-xl">
+                These adorable friends are looking for their forever homes. Could it be you?
+            </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Card 1: Bella -->
+<div class="bg-mint-green p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow flex flex-col gap-4 group">
+<div class="aspect-square rounded-lg bg-white overflow-hidden relative">
+<div class="w-full h-full flex items-center justify-center text-primary/20">
+<span class="material-symbols-outlined text-6xl">image</span>
+</div>
+<span class="absolute top-3 left-3 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-primary text-[10px] font-black uppercase tracking-wider">2 Years Old</span>
+</div>
+<div class="flex justify-between items-end">
+<div>
+<h3 class="text-2xl font-black text-slate-800">Bella</h3>
+<p class="text-slate-600 font-bold text-sm">Golden Retriever</p>
+</div>
+<button class="bg-vibrant-coral text-white text-xs font-black px-4 py-2 rounded-full hover:scale-105 transition-transform">
+                        Meet Me
+                    </button>
+</div>
+</div>
+<!-- Card 2: Charlie -->
+<div class="bg-pastel-pink p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow flex flex-col gap-4 group">
+<div class="aspect-square rounded-lg bg-white overflow-hidden relative">
+<div class="w-full h-full flex items-center justify-center text-primary/20">
+<span class="material-symbols-outlined text-6xl">image</span>
+</div>
+<span class="absolute top-3 left-3 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-primary text-[10px] font-black uppercase tracking-wider">4 Months Old</span>
+</div>
+<div class="flex justify-between items-end">
+<div>
+<h3 class="text-2xl font-black text-slate-800">Charlie</h3>
+<p class="text-slate-600 font-bold text-sm">British Shorthair</p>
+</div>
+<button class="bg-primary text-white text-xs font-black px-4 py-2 rounded-full hover:scale-105 transition-transform">
+                        Meet Me
+                    </button>
+</div>
+</div>
+<!-- Card 3: Milo -->
+<div class="bg-sunny-yellow/30 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow flex flex-col gap-4 group border border-sunny-yellow/20">
+<div class="aspect-square rounded-lg bg-white overflow-hidden relative">
+<div class="w-full h-full flex items-center justify-center text-primary/20">
+<span class="material-symbols-outlined text-6xl">image</span>
+</div>
+<span class="absolute top-3 left-3 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-primary text-[10px] font-black uppercase tracking-wider">1 Year Old</span>
+</div>
+<div class="flex justify-between items-end">
+<div>
+<h3 class="text-2xl font-black text-slate-800">Milo</h3>
+<p class="text-slate-600 font-bold text-sm">Beagle Puppy</p>
+</div>
+<button class="bg-vibrant-coral text-white text-xs font-black px-4 py-2 rounded-full hover:scale-105 transition-transform">
+                        Meet Me
+                    </button>
+</div>
+</div>
+<!-- Card 4: Luna -->
+<div class="bg-mint-green p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow flex flex-col gap-4 group">
+<div class="aspect-square rounded-lg bg-white overflow-hidden relative">
+<div class="w-full h-full flex items-center justify-center text-primary/20">
+<span class="material-symbols-outlined text-6xl">image</span>
+</div>
+<span class="absolute top-3 left-3 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-primary text-[10px] font-black uppercase tracking-wider">3 Years Old</span>
+</div>
+<div class="flex justify-between items-end">
+<div>
+<h3 class="text-2xl font-black text-slate-800">Luna</h3>
+<p class="text-slate-600 font-bold text-sm">Calico Cat</p>
+</div>
+<button class="bg-primary text-white text-xs font-black px-4 py-2 rounded-full hover:scale-105 transition-transform">
+                        Meet Me
+                    </button>
+</div>
+</div>
+</div>
+<div class="mt-16 text-center">
+<button class="border-2 border-primary text-primary font-black px-12 py-4 rounded-full hover:bg-primary hover:text-white transition-all">
+                View All Pets
+            </button>
+</div>
+</div>
+</section>
+<section class="px-6 py-20 bg-white dark:bg-background-dark">
+<div class="max-w-[1200px] mx-auto">
+<div class="flex flex-col items-center text-center gap-4 mb-16">
+<div class="p-4 bg-primary/10 rounded-full">
+<span class="material-symbols-outlined text-4xl text-primary fill-1">celebration</span>
+</div>
+<h2 class="text-4xl md:text-5xl font-black text-slate-900 dark:text-slate-100 italic">Success Stories</h2>
+<p class="text-slate-600 dark:text-slate-400 font-medium max-w-xl">
+                            Every tail wag and purr is a testament to the love our community provides. Here are some of our favorite happy endings.
+                        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-auto md:h-[700px]">
+<div class="md:col-span-2 md:row-span-2 relative rounded-xl overflow-hidden group shadow-lg">
+<img alt="Happy family with a newly adopted dog" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Happy family laughing with a newly adopted golden dog" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwHTClTf967R34odGRueBLFw6N97n-PpiJUrX9sFmbKMRishtGgeJaBi6zL49Sth06pGEYQB74M7Hj7FYov-VDxWy43bxeaczgrS-uMS_CaaqDaaVCN448mfYRtckDw4N6Gbud05QnJShncxNKP7AtGkelJazCwHo-33qpZ3oJCX8m93Sz-QV0_Zh6zyEEoPGpaePhkPjjZgudPr8xrEx2gY30ndW0Q_O_lNLQ9M_EAiWovoialYU8iMdeZtqmU0DLtVmVE7yB-V4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 p-8 text-white">
+<div class="flex gap-1 mb-3">
+<span class="material-symbols-outlined text-sunny-yellow fill-1">star</span>
+<span class="material-symbols-outlined text-sunny-yellow fill-1">star</span>
+<span class="material-symbols-outlined text-sunny-yellow fill-1">star</span>
+<span class="material-symbols-outlined text-sunny-yellow fill-1">star</span>
+<span class="material-symbols-outlined text-sunny-yellow fill-1">star</span>
+</div>
+<h3 class="text-3xl font-black mb-2 italic">"The light of our home"</h3>
+<p class="text-white/90 font-medium italic">"Adopting Luna was the best decision ever! The process was so easy and playful. She brings so much joy!"</p>
+<p class="mt-4 font-bold uppercase tracking-widest text-sm">— Emily R.</p>
+</div>
+</div>
+<div class="md:col-span-2 md:row-span-1 bg-mint-green p-8 rounded-xl flex flex-col justify-between shadow-lg">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-slate-800">format_quote</span>
+<div class="flex -space-x-3">
+<div class="w-12 h-12 rounded-full border-4 border-white bg-cover bg-center" data-alt="User avatar thumbnail" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBRW0vRps4EbdZ9eb7GpWw4c4i54QW4sjFTq-PGWBpvH8uC35_QXOqdVzOgKAirsrhvJj3m7vVyNk2oWuSqTjgXp-1DP4qblc3OY6UG5bHCCycUfmrrW-Q4LDLtXCJ8BPJpnAOOzHaHW1hqHtK0hokB9Sfl-QKQjGB0fNcYkMY0heEaeow1B0l6lPOCK8iFNgPy5W8xYQAhvZPyl70fx8RG9HQhAL-ply0Hd4y9HZVhwvpFeDm5Ol64zLxxBlF_F7cdLZM18ArSYA8')"></div>
+<div class="w-12 h-12 rounded-full border-4 border-white bg-cover bg-center" data-alt="Pet avatar thumbnail" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC04dD43lcNjMT9vLrU8QxSn0PGQLFXk-U72oyVLvAA0Qdp3hS_2z9K2VxjtYel9U2irBoUjpTGgN8XZiwzxom4G0d7PBAycR6XPFYArsgWdjc7owcpKezf1qpTAPvpxKlF1PAliCaJRhIGd48hafXgGDyUcjlYefzjTUejbpOlPkFBBVn9sBSBDckQvtPNsQfFS194X9lDFcvRBJpWZlIiKKXynOu04HFmgHIVXMAEcE5mVe_SPRrM16IzmoAzhS-41dI0Lao80Oc')"></div>
+</div>
+</div>
+<p class="text-slate-800 text-lg font-bold leading-snug">"Found my best friend Milo here. The team at Petscue is amazing and truly cares about the animals!"</p>
+<div class="flex items-center gap-3">
+<span class="w-10 h-1 bg-slate-800 rounded-full"></span>
+<span class="text-slate-800 font-black uppercase text-xs tracking-widest">Sarah J. &amp; Milo</span>
+</div>
+</div>
+<div class="md:col-span-1 md:row-span-1 relative rounded-xl overflow-hidden shadow-lg group">
+<img alt="Cute fluffy kitten" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Close up of a cute fluffy white kitten with blue eyes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOdkVgIcJ6U3DtiQGnHmZfaudxlq0y7eZA8m5MNVDHkiyFsmVTEWx7WG_s1Qye0Xpg6MVnSm5Ka5lww7yImcD62PnTYoZlkNsN2maoQ8G55nQHDrXiYv5nhkTLl3QAwxr4dY7YgOgBiKZlZ_x8J3hpIUX6YYN8FLeRZvAX2I3QRLjqO78dyjAGYU1aQy1BgqLqAFGDk4p-r7-Sq5jNQpdYN_76CP7k_qL5QaKlHZXIWEc3ebfzcu1TnEnY3Ea349p65sWEf-eeQhc"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-primary/20 transition-colors"></div>
+<div class="absolute bottom-4 left-4">
+<span class="bg-white/90 backdrop-blur px-3 py-1 rounded-full text-primary text-xs font-black">BELLA</span>
+</div>
+</div>
+<div class="md:col-span-1 md:row-span-1 bg-vibrant-coral text-white p-6 rounded-xl flex flex-col items-center text-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-5xl mb-2 fill-1">heart_plus</span>
+<p class="text-4xl font-black italic">500+</p>
+<p class="text-xs font-bold uppercase tracking-widest">Lives Saved</p>
+</div>
+</div>
+</div>
+</section>
+<section class="relative bg-sunny-yellow/10 py-20 overflow-hidden">
+<div class="absolute top-0 left-0 w-full rotate-180">
+<svg class="fill-white dark:fill-background-dark" viewbox="0 0 1440 320">
+<path d="M0,160L48,176C96,192,192,224,288,213.3C384,203,480,149,576,144C672,139,768,181,864,202.7C960,224,1056,224,1152,197.3C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+</svg>
+</div>
+<div class="max-w-[1200px] mx-auto px-6 relative z-10 text-center">
+<div class="inline-block p-6 bg-white dark:bg-slate-900 rounded-xl shadow-2xl max-w-2xl mx-auto border-4 border-vibrant-coral/20">
+<h2 class="text-3xl md:text-4xl font-black text-slate-900 dark:text-slate-100 mb-6 italic">Ready to make a new friend?</h2>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<div class="flex-1 bg-background-light dark:bg-slate-800 rounded-full px-6 py-4 flex items-center gap-3 border-2 border-primary/10">
+<span class="material-symbols-outlined text-primary">mail</span>
+<input class="bg-transparent border-none focus:ring-0 w-full text-slate-900 dark:text-slate-100 font-bold" placeholder="Your email for pet alerts..." type="email"/>
+</div>
+<button class="bg-primary text-white font-black px-10 py-4 rounded-full bubbly-shadow hover:scale-105 transition-transform">
+                                Subscribe ✨
+                            </button>
+</div>
+<p class="mt-6 text-slate-500 dark:text-slate-400 text-sm font-medium">
+                            Join 2,000+ pet lovers receiving weekly updates on new arrivals!
+                        </p>
+</div>
+</div>
+<div class="absolute top-1/2 left-10 text-primary opacity-20 -rotate-12 hidden lg:block">
+<span class="material-symbols-outlined text-9xl">pets</span>
+</div>
+<div class="absolute bottom-10 right-10 text-vibrant-coral opacity-20 rotate-12 hidden lg:block">
+<span class="material-symbols-outlined text-9xl">volunteer_activism</span>
+</div>
+</section>
+</main>
+<footer class="bg-white dark:bg-background-dark border-t border-primary/10 pt-20 pb-10 px-6">
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1 flex flex-col gap-6">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-3xl fill-1">pets</span>
+<h2 class="text-2xl font-black tracking-tighter text-slate-900 dark:text-slate-100">Petscue</h2>
+</div>
+<p class="text-slate-600 dark:text-slate-400 font-medium">
+                        Dedicated to finding loving homes for every pet. Join our mission and change a life today.
+                    </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-xl">group</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-xl">camera</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-slate-900 dark:text-slate-100 font-black mb-6 uppercase tracking-widest text-sm">Quick Links</h4>
+<ul class="flex flex-col gap-4 text-slate-600 dark:text-slate-400 font-bold">
+<li><a class="hover:text-primary transition-colors" href="#">Adopt a Pet</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Success Stories</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Our Shelters</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Volunteering</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-slate-900 dark:text-slate-100 font-black mb-6 uppercase tracking-widest text-sm">Resources</h4>
+<ul class="flex flex-col gap-4 text-slate-600 dark:text-slate-400 font-bold">
+<li><a class="hover:text-primary transition-colors" href="#">Pet Care Tips</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Donation FAQs</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-slate-900 dark:text-slate-100 font-black mb-6 uppercase tracking-widest text-sm">Contact Us</h4>
+<ul class="flex flex-col gap-4 text-slate-600 dark:text-slate-400 font-bold">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+                            123 Sparkle Way, Pet City
+                        </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">call</span>
+                            (555) 123-4567
+                        </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+                            hello@petscue.org
+                        </li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto border-t border-primary/10 pt-10 text-center">
+<p class="text-slate-500 dark:text-slate-500 text-sm font-bold">
+                    © 2024 Petscue. All tails wagging. Made with <span class="material-symbols-outlined text-primary text-xs align-middle fill-1">favorite</span> for animals.
+                </p>
+</div>
+</footer>
+</div>
+</body></html>
